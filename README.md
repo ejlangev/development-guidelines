@@ -1,2 +1,47 @@
-# development-guidelines
-Collection of guidelines for various pieces of web development, mostly backend focused
+# Development Guidelines
+
+A fairly opinionated list of guidelines for doing web development at
+startups.
+
+## Table of Contents
+
+1. [General principles]()
+    1.1. [SOLID]()
+    1.2. [Knowledge sharing]()
+2. [Database design]()
+    2.1. [Conventions]()
+    2.2. [Column types]()
+    2.3. [Updates vs ledgers]()
+3. [REST API design]()
+    3.1. [Designing endpoints and routes]()
+    3.2. [Response formats]()
+    3.3. [Status codes]()
+    3.4. [Versioning]()
+    3.5. [Documenting]()
+4. [Code writing]()
+    4.1. [Top level guidelines]()
+    4.2. [Error handling]()
+    4.3. [Magic numbers]()
+    4.4. [Logging]()
+    4.5. [Comments]()
+4. [Code organization patterns]()
+    4.1. [Purpose and motivation]()
+    4.2. [Policy objects]()
+    4.3. [Decorator objects]()
+    4.4. [Service objects]()
+5. [Code consistency]()
+    5.1. [Styleguides]()
+    5.2. [Linting]()
+    5.3. [Formatting]()
+    5.4. [Amending conventions]()
+6. [Code review]()
+    6.1. [Writing effective feedback]()
+    6.2. [
+7. [Testing]()
+    7.1. [Unit testing]()
+    7.2. [Integration testing]()
+    7.3. [Mocking and stubbing]()
+    7.4. [Avoiding brittle tests]()
+8. [Documentation]()
+    8.1. [When to document]()
+    8.2. [What to include in documentation]()
