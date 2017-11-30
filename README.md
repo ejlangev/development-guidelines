@@ -5,7 +5,7 @@ startups.
 
 ## Table of Contents
 
-1. [General principles]()
+1. [General principles](general-principles/index.md)
     * [SOLID]()
     * [Knowledge sharing]()
 2. [Basic tools]()
