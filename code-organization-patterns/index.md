@@ -1,5 +1,9 @@
 # Code organization patterns
 
+## Purpose and motivation
+
+## Value objects
+
 ## Form objects
 
 ## Service objects
