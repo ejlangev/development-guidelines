@@ -7,6 +7,7 @@ startups.
 
 1. [Introduction](introduction/index.md)
     * [Guiding principles](introduction/index.md#guiding-principles)
+    * [Engineering values](introduction/index.md#engineering-values)
     * [SOLID](introduction/index.md#solid)
     * [Knowledge sharing](introduction/index.md#knowledge-sharing)
 2. [Basic tools]()
