@@ -1,11 +1,12 @@
 # Basic tools
 
-There are three main things a basic application needs to be able to do
+There are four main things a basic application needs to be able to do
 easily in order to be successful.  They are:
 
 1. Setting up new API endpoints
-2. Moving tasks out of the request/response cycle with a queue
-3. Easy to set up recurring tasks that push jobs to the work queue
+2. Easily managing your database
+3. Moving tasks out of the request/response cycle with a queue
+4. Easy to set up recurring tasks that push jobs to the work queue
 
 Without any one of these pieces developers will be forced to make
 unfortunate tradeoffs.  Note that having difficult to use versions of
@@ -17,6 +18,12 @@ The main goal of installing these pieces early is to make the easiest
 and simplest course of action when developing new features also the
 correct one.  Ultimately that sets up the right incentives for
 developers and helps lead to successful projects.
+
+When selecting core infrastructure it is best to keep choices boring and
+conventional.  Many people have experience with this type of technology
+and it is generally the most stable.  A bad outcome would be choosing an
+experimental piece of infrastructure and being forced to spend a lot of
+time learning it when it might be tangential to your business needs.
 
 ## API
 
@@ -31,6 +38,25 @@ not be afraid to spend some time thinking aobut how things like errors,
 serialization, and url structure will work across your API at the
 beginning of the project.  Doing so will save a lot of time in the long
 run.
+
+## Database management
+
+Sticking to the theme of boring infrastructure, for most applications
+the best option is to stick to a normal, relational database like
+Postgres.  Basically all the core issues with using Postgres are solved at
+this point in most languages and environments.  Some important tips:
+
+- Find a way to manage migrations from the get-go.  This is the major
+  complaint people raise about using a relational database.  It does
+  take slighly longer to develop within a strict schema but being able
+  to leverage all the features of a relational database more than makes
+  up for the minor slowdown.  Using a migration framework reduces this
+  cost to close to zero.
+- Think carefully about your table design and make sure to consult best
+  practices and outlines.  See the [Database design](../database-design/index.md)
+  section for some tips.  It is much easier to get the schema correct
+  the first time than it is to fix it later on so some time spent
+  planning often pays for itself.
 
 ## Work queues
 
